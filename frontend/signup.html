@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | BlueBank</title>
+  <link rel="stylesheet" href="style.css"> <!-- Reuse your styles -->
+</head>
+<body>
+  <!-- Reuse your header (copy-paste from index.html) -->
+  <header class="navbar">
+    <!-- Your existing header code -->
+    <!-- In your <header> section -->
+    <a href="index.html" class="logo-link">
+        <div class="logo-combo">
+            <img src="logo.png" alt="BlueBank Logo" class="bank-logo">
+            <h1>BlueBank</h1>
+        </div>
+    </a>
+
+    <!-- Hamburger Menu (Mobile Only) -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="nav-links" id="navLinks">
+      <ul>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sign-Up Section -->
+  <section class="signup-section">
+    <div class="signup-container">
+      <h2>Create Your Account</h2>
+      <p>For Flexible Banking.</p>
+
+      <form id="signupForm">
+        <!-- Name Input -->
+        <div class="input-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" required placeholder="John Doe">
+        </div>
+
+        <!-- Email Input -->
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required placeholder="john@example.com">
+        </div>
+
+        <!-- Password Input -->
+        <div class="input-group">
+          <label for="password">Password</label>
+          <div class="password-wrapper">
+            <input type="password" id="password" required placeholder="At least 8 characters">
+            <button type="button" class="toggle-password">👁️</button>
+          </div>
+          <div class="password-strength"></div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-signup">Sign Up</button>
+      </form>
+
+      <p class="login-link">
+        Already have an account? <a href="login.html">Log in</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Reuse your footer (copy-paste from index.html) -->
+  <footer class="footer">
+    <!-- Your existing footer code -->
+     <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms</a>
+      <a href="#">Contact</a>
+    </div>
+    <p>&copy; 2025 BlueBank. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script> <!-- For form validation -->
+</body>
+</html>
