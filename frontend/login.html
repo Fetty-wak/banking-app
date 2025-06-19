@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | BlueBank</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Reused Header (Clickable Logo + Nav) -->
+  <header class="navbar">
+    <a href="index.html" class="logo-link">
+      <div class="logo-combo">
+        <img src="logo.png" alt="BlueBank Logo" class="bank-logo">
+        <h1>BlueBank</h1>
+      </div>
+    </a>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <ul>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Login Section -->
+  <section class="auth-section">
+    <div class="auth-container">
+      <h2>Welcome Back</h2>
+      <p>Log in to access your account.</p>
+
+      <form id="loginForm">
+        <!-- Email Input -->
+        <div class="input-group">
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" required placeholder="john@example.com">
+        </div>
+
+        <!-- Password Input -->
+        <div class="input-group">
+          <label for="loginPassword">Password</label>
+          <div class="password-wrapper">
+            <input type="password" id="loginPassword" required placeholder="Enter your password">
+            <button type="button" class="toggle-password">👁️</button>
+          </div>
+        </div>
+
+        <!-- Remember Me + Forgot Password -->
+        <div class="login-options">
+          <label>
+            <input type="checkbox" id="rememberMe"> Remember me
+          </label>
+          <a href="forgot-password.html">Forgot password?</a>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-login">Log In</button>
+      </form>
+
+      <p class="auth-switch">
+        Don’t have an account? <a href="signup.html">Sign up</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Reused Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms</a>
+      <a href="#">Contact</a>
+    </div>
+    <p>&copy; 2025 BlueBank. All rights reserved.</p>
+  </footer>
+
+  <script src="login.js"></script>
+</body>
+</html>
